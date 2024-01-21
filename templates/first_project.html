@@ -1,0 +1,247 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+    <div class="container text-center">
+        <cite>This dataset pulls job postings from Google's search results for Data Analyst positions in the United States.</cite>
+        <br>
+        Data collection is updated daily, starting from 4.11.2023. Collected on 28.12.2023.
+    </div>
+
+
+    <div id="top_8" style="width: 80%; margin-left: 10%; height: 400px"> </div>
+
+
+    <div class="container text-center">
+
+    <p>
+        Chart suggests a job market that highly values data-related skills,
+        from foundational database management with SQL to data visualization with Power BI and Tableau,
+        to statistical analysis with R and SAS, as well as the ability to present findings
+        using tools like PowerPoint.
+    </p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sql" aria-expanded="false" aria-controls="sql">
+        SQL
+      </button>
+
+        <div class="collapse" id="sql" style="font-size: small">
+          <div class="card card-body">
+                With nearly 20,000 mentions, SQL is by far the most in-demand technology
+                for Data Analyst positions. This indicates that proficiency in SQL is likely essential
+                for data analysts, as SQL is commonly used for querying and managing databases.
+          </div>
+        </div>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#excel" aria-expanded="false" aria-controls="excel">
+        Excel
+      </button>
+        <div class="collapse" id="excel" style="font-size: small">
+          <div class="card card-body">
+              Excel is the second most listed skill,
+              with over 13,000 mentions. This suggests that despite
+              the prevalence of advanced analytical tools, Excel's versatility
+              and widespread use keep it relevant in the data analysis field.
+          </div>
+        </div>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#prl" aria-expanded="false" aria-controls="prl">
+        Programming Languages
+      </button>
+
+        <div class="collapse" id="prl" style="font-size: small">
+          <div class="card card-body">
+                Python is the third most listed skill,
+              showing its significant role in data analysis for scripting, data manipulation,
+              and analysis tasks. The presence of R, although less frequent than Python, emphasizes
+              the importance of statistical analysis skills in the data analyst job market.
+          </div>
+        </div>
+
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pp" aria-expanded="false" aria-controls="pp">
+        PowerPoint
+      </button>
+
+        <div class="collapse" id="pp" style="font-size: small">
+          <div class="card card-body">
+              PowerPoint being on the list, albeit the least mentioned,
+              highlights that data analysts are expected to have the ability to present findings
+              clearly and effectively, often using presentation software.
+          </div>
+        </div>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#bi" aria-expanded="false" aria-controls="bi">
+        BI
+      </button>
+
+        <div class="collapse" id="bi" style="font-size: small">
+          <div class="card card-body">
+              Power BI and Tableau are close in mentions, indicating that skills in business
+              intelligence and data visualization tools are highly sought after by employers.
+              The ability to not only analyze data but also present it in an accessible format is crucial.
+          </div>
+        </div>
+    </div>
+        <div id="trend" style="width: 90%; margin-left: 5%; height: 700px">  </div>
+
+        <div class="container text-center">
+            <p>
+                There are two notable spikes in job offers for those skills, occurring around January and September.
+                Towards the end of the collection period, there is a noticeable decrease in job offers
+                for those particular skills. This decline might suggest a change in technology
+                trends or could be related to seasonal variations.
+            </p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ppss" aria-expanded="false" aria-controls="ppss">
+            PowerPoint/SAS
+          </button>
+
+            <div class="collapse" id="ppss" style="font-size: small">
+              <div class="card card-body">
+                PowerPoint and SAS show less fluctuation and lower overall frequency,
+                which may indicate a more niche or stable demand for these skills without significant growth
+                or decline in the timeframe shown.
+              </div>
+            </div>
+        </div>
+        <div id="viad" style="width: 90%; margin-left: 5%; height: 400px">   </div>
+        <div class="container text-center">
+            <p>
+                LinkedIn and Upwork are the top platforms for job listings
+                in this dataset, with other sites like BeBee, Trabajo.org and ZipRecruiter following behind.
+                The remaining sites have significantly fewer job listings, suggesting they might serve
+                niche markets or have a smaller user base for job postings.
+            </p>
+        </div>
+
+        <div id="schedule" style="width: 90%; margin-left: 5%; height: 400px"> </div>
+        <div class="container text-center">
+            <p>
+                The majority of internships do not specify a particular schedule type.
+                Among those that do, most are for full-time internships.
+                Part-time or temporary work internships are less commonly
+                sought after by employers.
+            </p>
+        </div>
+    <div class="row" style="height: 400px">
+        <div class="col" id="gen_intern" style="">
+        </div>
+        <div class="col" id="last_intern">
+        </div>
+    </div>
+
+
+    <div class="container text-center">
+    <h3>Top technologies for interns</h3>
+        <div class="row" style="text-align: left; width: 50%; margin-left: 30%">
+            <div class="col" style="width: 50%">
+                <h3>In total:</h3>
+                <ol>
+                    <li>Excel</li>
+                    <li>SQL</li>
+                    <li>Power BI</li>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>Tableau</li>
+                    <li>Powerpoint</li>
+                    <li>Word</li>
+                    <li>SAS</li>
+                    <li>Spark</li>
+                </ol>
+            </div>
+            <div class="col" style="width: 50%">
+                <h3>In last month:</h3>
+                <ol>
+                    <li>SQL</li>
+                    <li>Excel</li>
+                    <li>Power BI</li>
+                    <li>Python</li>
+                    <li>Powerpoint</li>
+                    <li>Word</li>
+                    <li>SAP</li>
+                    <li>Qlik</li>
+                    <li>Tableau</li>
+                    <li>SAS</li>
+                </ol>
+            </div>
+        </div>
+    <p>
+        The second chart might suggest a shift in technology demand.
+    </p>
+    </div>
+    <div id="last_tech" style="width: 90%; margin-left: 5%; height: 700px">
+    </div>
+    <div class="container" style="width: 50%; margin-left: 37%">
+            <ul>
+                <li>R is losing interest</li>
+                <li>SAP and Qlik are gaining popularity</li>
+                <li>Spark follows the general trend</li>
+            </ul>
+    </div>
+
+    <div id="intern_line" style="width: 90%; margin-left: 5%; height: 700px">
+    </div>
+
+    <div class="container" style="width: 50%; margin-left: 30%">
+        <ul>
+            <li><h6>December 2022</h6></li>
+            Spike in number of internship offers.
+            <li><h6>First half of 2023</h6></li>
+            General decline in offers with one spike in March.
+            <li><h6>Second half of 2023</h6></li>
+            Starting in July 2023, reaching the highest point on the chart in December 2023.
+{#            This peak could represent a high demand for interns,#}
+{#            possibly related to summer internships or specific#}
+{#            projects requiring additional temporary staff.#}
+        </ul>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1 style="text-align: center; color: white; background-color: #0d6efd; height: 92px; padding-top: 20px">What should internship seeker do?</h1>
+        <br>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>What to learn?</h3>
+            <h6>Priority:</h6>
+            <ul>
+                <li>SQL</li>
+                <li>Excel</li>
+                <li>Power BI</li>
+            </ul>
+            <h6>Secondary:</h6>
+            <ul>
+                <li>Python</li>
+                <li>Powerpoint</li>
+            </ul>
+
+                In general, there is overlap among the top technologies required for interns and for all.
+                In the future, you might consider learning Tableau. <br>
+                SAP and Qlik are technologies that can be potentially relevant and worthy of continued monitoring.
+            </div>
+            <div class="col" style="border-left: 1px solid grey">
+                <h3>Where, when and how?</h3>
+                <p>
+                    The best is to look up for jobs via:
+                </p>
+                    <ul>
+                        <li>LinkedIn</li>
+                        <li>Upwork</li>
+                        <li>BeBee</li>
+                    </ul>
+
+                <p>
+                    The highest number of internship offers occurs during the data collection period.
+                    If there is a pattern, it's advisable to focus your search in December
+                    or the second half of the year.
+                </p>
+                <p>The majority of the declared offers are full-time, so it's recommended to prepare yourself accordingly.</p>
+            </div>
+        </div>
+
+        </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src={% static 'js/this.js' %}></script>
+
+{% endblock %}

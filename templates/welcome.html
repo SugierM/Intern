@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% block content %}
+    <div class="container">
+        <br>
+        <div class="card" style="width: 80%; margin-left: 10%;">
+            <div class="card-body">
+                <h5 class="card-title">About me</h5>
+                    <p class="card-text">
+                        Welcome to my project portfolio! I'm on an exciting journey to become a data scientist,
+                        and this page is a window into my progress and passion for data-driven exploration.
+                        As an aspiring data scientist, I've embarked on various projects, each one a step closer to my goal
+                        of mastering the art and science of extracting valuable insights from data. Through these projects,
+                        I've honed my skills in data analysis, machine learning, and data visualization, and I'm eager to share
+                        my journey with you. Join me as I showcase my dedication, creativity, and continuous learning in the world
+                        of data science.
+                    </p>
+            </div>
+        </div>
+        <br>
+    <div class="card" style="width: 80%; margin-left: 10%;">
+        <div class="card-body">
+            <h5 class="card-title"><a href="{% url 'analyst_jobs' %}">Project One</a></h5>
+             data: <a href="https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search" target="_blank">link</a>
+            <br>
+            data collected on: 28.12.23
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
