@@ -51,4 +51,5 @@ This project has been successfully completed.
 <a name="plans"></a>
 ## Future Plans
 I plan to create more projects like this one and bring them together into a single interactive webpage.
+
 [TOP](#top)
