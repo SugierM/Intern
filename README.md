@@ -9,7 +9,6 @@ Using Jupyter Notebook for data analysis and the Django framework for web develo
 2. [Technologies Used](#technologies)
 3. [Installation](#installation)
 4. [Project Status](#status)
-5. [Future Plans](#plans)
 
 <a name="screenshots"></a>
 ## Screenshots
@@ -48,8 +47,5 @@ This way, you can ensure that the project works as expected by using the provide
 ## Project Status
 This project has been successfully completed.
 
-<a name="plans"></a>
-## Future Plans
-I plan to create more projects like this one and bring them together into a single interactive webpage.
 
 [TOP](#top)
